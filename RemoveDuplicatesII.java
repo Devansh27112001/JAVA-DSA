@@ -15,7 +15,7 @@ public class RemoveDuplicatesII {
     public static int solution(int[] nums){
         int k = 2;
         for(int i = 2; i < nums.length; i++){
-            if(nums[i] != nums[i-2]){
+            if(nums[i] != nums[k-2]){
                 nums[k++] = nums[i];
             }
         }
